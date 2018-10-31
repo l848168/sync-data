@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zjs.syncdata.mysqlmapper.MysqlMapper" >
+
+    <!--批量保存关键词-->
+    <insert id="saveAddrKeyWord" parameterType="list">
+        insert into fd_address_keyword (unit_pkcorp,keyword,provice,city,county_name,dr,corrdinate,lat,lng,create_time,creator_id,
+        creator,modifier_id,modifier,last_modify_time,status)values
+        <foreach collection="list" item="item" index="index" separator="," >
+            (#{item.unit_pkcorp,jdbcType=VARCHAR},
+            #{item.keyword,jdbcType=VARCHAR},
+            #{item.provice,jdbcType=VARCHAR},
+            #{item.city,jdbcType=VARCHAR},
+            #{item.county_name,jdbcType=VARCHAR},
+            #{item.dr,jdbcType=INTEGER},
+            #{item.corrdinate,jdbcType=VARCHAR},
+            #{item.lat,jdbcType=DECIMAL},
+            #{item.lng,jdbcType=DECIMAL},
+            #{item.create_time,jdbcType=TIMESTAMP},
+            #{item.creator_id,jdbcType=VARCHAR},
+            #{item.creator,jdbcType=VARCHAR},
+            #{item.modifier_id,jdbcType=VARCHAR},
+            #{item.modifier,jdbcType=VARCHAR},
+            #{item.last_modify_time,jdbcType=TIMESTAMP},
+            #{item.status,jdbcType=INTEGER})
+        </foreach>
+    </insert>
+
+    <!--保存电子围栏-->
+    <insert id="saveElectronicsFence" parameterType="com.zjs.syncdata.model.ElectronicsFenceMysql"
+            useGeneratedKeys="true"
+            keyProperty="id">
+        INSERT INTO fd_electronics_fence (path, min_lat, max_lat, min_lng, max_lng, center, dr, create_time, creator_id,
+        creator, modifier_id, modifier, last_modify_time,unit_pkcorp, area_id) values
+           (#{path,jdbcType=VARCHAR},
+            #{min_lat,jdbcType=DECIMAL},
+            #{max_lat,jdbcType=DECIMAL},
+            #{min_lng,jdbcType=DECIMAL},
+            #{max_lng,jdbcType=DECIMAL},
+            #{center,jdbcType=VARCHAR},
+            #{dr,jdbcType=INTEGER},
+            #{create_time,jdbcType=TIMESTAMP},
+            #{creator_id,jdbcType=VARCHAR},
+            #{creator,jdbcType=VARCHAR},
+            #{modifier_id,jdbcType=VARCHAR},
+            #{modifier,jdbcType=VARCHAR},
+            #{last_modify_time,jdbcType=TIMESTAMP},
+            #{unit_pkcorp,jdbcType=VARCHAR},
+            #{area_id,jdbcType=VARCHAR})
+    </insert>
+
+    <!--批量保存电子围栏属性-->
+    <insert id="saveElectronicsAttributes" parameterType="list">
+        INSERT INTO fd_electronics_fence_attributes
+        (s_code, unit_pkcorp, unit_code, unit_name, fence_id, fence_code, fence_name, f_code, dr, create_time,
+         creator_id, creator, modifier_id, modifier, last_modify_time) VALUES
+        <foreach collection="list" item="item" index="index" separator="," >
+            ( #{item.s_code,jdbcType=VARCHAR},
+            #{item.unit_pkcorp,jdbcType=VARCHAR},
+            #{item.unit_code,jdbcType=VARCHAR},
+            #{item.unit_name,jdbcType=VARCHAR},
+            #{item.fence_id,jdbcType=INTEGER},
+            #{item.fence_code,jdbcType=VARCHAR},
+            #{item.fence_name,jdbcType=VARCHAR},
+            #{item.f_code,jdbcType=VARCHAR},
+            #{item.dr,jdbcType=INTEGER},
+            #{item.create_time,jdbcType=TIMESTAMP},
+            #{item.creator_id,jdbcType=VARCHAR},
+            #{item.creator,jdbcType=VARCHAR},
+            #{item.modifier_id,jdbcType=VARCHAR},
+            #{item.modifier,jdbcType=VARCHAR},
+            #{item.last_modify_time,jdbcType=TIMESTAMP}
+        </foreach>
+    </insert>
+</mapper>
+

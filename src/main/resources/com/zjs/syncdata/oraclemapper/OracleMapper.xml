@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zjs.syncdata.oraclemapper.OracleMapper" >
+
+    <!--查询所有关键词总量-->
+    <select id="selectCountAddrKeyword" resultType="int">
+      select count(id) from ADDRESS_KEYWORD where status=1
+    </select>
+
+    <!--根据关键词中的电子围栏ID查询电子围栏表中的单位主键-->
+    <select id="getIdByUnitPkCorp" parameterType="int" resultType="string">
+        select unit_pkcorp from DISTRIBUTION_CENTER where ID = #{centerId,jdbcType=INTEGER}
+    </select>
+
+    <!--分页查询关键词-->
+    <select id="listAddressKeywordOracle" resultType="com.zjs.syncdata.model.AddressKeywordOracle">
+        SELECT
+         KEYWORD,
+         PROVICE,
+         CITY,
+         COUNTY_NAME countyName,
+         STATUS,
+         CREATE_TIME createTime,
+         CREATOR_ID creatorId,
+         CREATOR,
+         MODIFIER_ID modifierId,
+         MODIFIER,
+         LAST_MODIFY_TIME  lastModifyTime,
+         CORRDINATE,
+         LAT,
+         LNG,
+         CENTER_ID centerId
+         FROM ADDRESS_KEYWORD where status=1
+    </select>
+
+    <!--查询所有电子围栏总量-->
+    <select id="selectCountCenter" resultType="int">
+      select count(id) from DISTRIBUTION_CENTER
+    </select>
+
+    <!--分页查询电子围栏-->
+    <select id="listCenter" resultType="com.zjs.syncdata.model.DistributionCenterOracle">
+        SELECT
+        ID,
+        BELONG_TO_PROVICE belongToProvice,
+        D_CODE dCode,
+        DC_CODE dcCode,
+        DC_NAME dcName,
+        AREA_ID areaId,
+        AREA_NAME areaName,
+        PATH,
+        MIN_LAT minLat,
+        MIN_LNG minLng,
+        MAX_LAT maxLat,
+        MAX_LNG maxLng,
+        COMPANY_ID  companyId,
+        CENTER,
+        CREATE_TIME createTime,
+        CREATOR_ID creatorId,
+        CREATOR,
+        LAST_MODIFY_TIME  lastModifyTime,
+        MODIFIER_ID modifierId,
+        MODIFIER,
+        UNIT_PKCORP unitPkcorp,
+        FIRSTSTAGECODE
+         FROM DISTRIBUTION_CENTER
+    </select>
+
+    <!--根据单位主键查询单位信息-->
+    <select id="getUnitByPkCorp" parameterType="string" resultType="com.zjs.syncdata.model.Unit">
+        SELECT UNITCODE,UNITNAME FROM FD_UNIT_MESSAGE WHERE PK_CORP =#{pkcorp,jdbcType=VARCHAR} and DR=0
+    </select>
+
+    <!--根据定时任务编码查询状态信息-->
+    <select id="getStatusByCode" parameterType="string" resultType="com.zjs.syncdata.model.ScheduletaskListener">
+        select status from FD_SCHEDULETASK_LISTENER where code =#{code,jdbcType=VARCHAR}
+    </select>
+
+    <!--根据定时任务编码修改时间及状态为close-->
+    <update id="updateDateAndStatusByCode">
+        update FD_SCHEDULETASK_LISTENER set LAST_EXECUTE_DATE = #{date,jdbcType=TIMESTAMP},status= #{status,jdbcType=VARCHAR} WHERE CODE = #{code,jdbcType=VARCHAR}
+    </update>
+
+</mapper>
+

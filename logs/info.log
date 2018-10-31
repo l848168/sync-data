@@ -1,0 +1,92 @@
+2018-10-30 14:58:55 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 8992 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 14:58:55 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 14:58:55 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b062a: startup date [Tue Oct 30 14:58:55 CST 2018]; root of context hierarchy
+2018-10-30 14:58:56 INFO  [com.zjs.syncdata.config.PrimaryDatasourceConfig:57] - Oracle数据源：注册MyBatis分页插件PageHelper
+2018-10-30 14:58:56 INFO  [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup
+2018-10-30 14:58:56 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'primaryDataSource' has been autodetected for JMX exposure
+2018-10-30 14:58:56 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'secondDataSource' has been autodetected for JMX exposure
+2018-10-30 14:58:56 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'primaryDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=primaryDataSource,type=HikariDataSource]
+2018-10-30 14:58:56 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'secondDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=secondDataSource,type=HikariDataSource]
+2018-10-30 14:58:56 INFO  [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:268] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-30 14:58:56 INFO  [org.springframework.boot.StartupInfoLogger:57] - Started SyncDataApplication in 2.22 seconds (JVM running for 3.484)
+2018-10-30 14:59:10 INFO  [com.zaxxer.hikari.HikariDataSource:93] - HikariPool-1 - Started.
+2018-10-30 14:59:10 INFO  [com.zaxxer.hikari.pool.PoolBase:469] - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2018-10-30 14:59:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:00:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:01:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:02:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:03:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:04:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:05:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:06:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:07:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:08:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:09:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:10:17 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 12504 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 15:10:17 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 15:10:17 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b062a: startup date [Tue Oct 30 15:10:17 CST 2018]; root of context hierarchy
+2018-10-30 15:10:17 INFO  [com.zjs.syncdata.config.PrimaryDatasourceConfig:57] - Oracle数据源：注册MyBatis分页插件PageHelper
+2018-10-30 15:10:19 INFO  [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup
+2018-10-30 15:10:19 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'primaryDataSource' has been autodetected for JMX exposure
+2018-10-30 15:10:19 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'secondDataSource' has been autodetected for JMX exposure
+2018-10-30 15:10:19 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'primaryDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=primaryDataSource,type=HikariDataSource]
+2018-10-30 15:10:19 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'secondDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=secondDataSource,type=HikariDataSource]
+2018-10-30 15:10:19 INFO  [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:268] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-30 15:10:19 INFO  [org.springframework.boot.StartupInfoLogger:57] - Started SyncDataApplication in 2.114 seconds (JVM running for 3.53)
+2018-10-30 15:11:10 INFO  [com.zaxxer.hikari.HikariDataSource:93] - HikariPool-1 - Started.
+2018-10-30 15:11:10 INFO  [com.zaxxer.hikari.pool.PoolBase:469] - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2018-10-30 15:11:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
+2018-10-30 15:14:23 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 14236 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 15:14:23 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 15:14:23 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b062a: startup date [Tue Oct 30 15:14:23 CST 2018]; root of context hierarchy
+2018-10-30 15:14:24 INFO  [com.zjs.syncdata.config.PrimaryDatasourceConfig:57] - Oracle数据源：注册MyBatis分页插件PageHelper
+2018-10-30 15:14:24 INFO  [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup
+2018-10-30 15:14:24 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'primaryDataSource' has been autodetected for JMX exposure
+2018-10-30 15:14:24 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'secondDataSource' has been autodetected for JMX exposure
+2018-10-30 15:14:24 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'primaryDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=primaryDataSource,type=HikariDataSource]
+2018-10-30 15:14:24 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'secondDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=secondDataSource,type=HikariDataSource]
+2018-10-30 15:14:24 INFO  [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:268] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-30 15:14:24 INFO  [org.springframework.boot.StartupInfoLogger:57] - Started SyncDataApplication in 1.586 seconds (JVM running for 2.181)
+2018-10-30 15:15:43 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 18856 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 15:15:43 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 15:15:43 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c1bced: startup date [Tue Oct 30 15:15:43 CST 2018]; root of context hierarchy
+2018-10-30 15:15:43 INFO  [com.zjs.syncdata.config.PrimaryDatasourceConfig:57] - Oracle数据源：注册MyBatis分页插件PageHelper
+2018-10-30 15:15:44 INFO  [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup
+2018-10-30 15:15:44 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'primaryDataSource' has been autodetected for JMX exposure
+2018-10-30 15:15:44 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'secondDataSource' has been autodetected for JMX exposure
+2018-10-30 15:15:44 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'primaryDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=primaryDataSource,type=HikariDataSource]
+2018-10-30 15:15:44 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'secondDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=secondDataSource,type=HikariDataSource]
+2018-10-30 15:15:44 INFO  [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:268] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-30 15:15:44 INFO  [org.springframework.boot.StartupInfoLogger:57] - Started SyncDataApplication in 1.554 seconds (JVM running for 2.046)
+2018-10-30 15:16:36 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 16640 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 15:16:36 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 15:16:36 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c1bced: startup date [Tue Oct 30 15:16:36 CST 2018]; root of context hierarchy
+2018-10-30 15:16:36 INFO  [com.zjs.syncdata.config.PrimaryDatasourceConfig:57] - Oracle数据源：注册MyBatis分页插件PageHelper
+2018-10-30 15:16:37 INFO  [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup
+2018-10-30 15:16:37 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'primaryDataSource' has been autodetected for JMX exposure
+2018-10-30 15:16:37 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'secondDataSource' has been autodetected for JMX exposure
+2018-10-30 15:16:37 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'primaryDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=primaryDataSource,type=HikariDataSource]
+2018-10-30 15:16:37 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'secondDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=secondDataSource,type=HikariDataSource]
+2018-10-30 15:16:37 INFO  [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:268] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-30 15:16:37 INFO  [org.springframework.boot.StartupInfoLogger:57] - Started SyncDataApplication in 1.553 seconds (JVM running for 2.072)
+2018-10-30 15:17:30 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 15900 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 15:17:30 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 15:17:30 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b062a: startup date [Tue Oct 30 15:17:30 CST 2018]; root of context hierarchy
+2018-10-30 15:17:30 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory:828] - Overriding bean definition for bean 'consumer' with a different definition: replacing [Generic bean: class [com.zjs.syncdata.rocketmq.Consumer]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\springBootDemo\synchData\sync-data\target\classes\com\zjs\syncdata\rocketmq\Consumer.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=consumer; factoryMethodName=consumer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/zjs/syncdata/rocketmq/Consumer.class]]
+2018-10-30 15:17:30 INFO  [org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer:101] - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-30 15:17:57 INFO  [org.springframework.boot.StartupInfoLogger:48] - Starting SyncDataApplication on LiWeiHang313167 with PID 12476 (D:\springBootDemo\synchData\sync-data\target\classes started by admin in D:\springBootDemo\synchData\sync-data)
+2018-10-30 15:17:57 INFO  [org.springframework.boot.SpringApplication:593] - No active profile set, falling back to default profiles: default
+2018-10-30 15:17:57 INFO  [org.springframework.context.support.AbstractApplicationContext:583] - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1b062a: startup date [Tue Oct 30 15:17:57 CST 2018]; root of context hierarchy
+2018-10-30 15:17:58 INFO  [com.zjs.syncdata.config.PrimaryDatasourceConfig:57] - Oracle数据源：注册MyBatis分页插件PageHelper
+2018-10-30 15:17:58 INFO  [org.springframework.jmx.export.MBeanExporter:431] - Registering beans for JMX exposure on startup
+2018-10-30 15:17:58 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'primaryDataSource' has been autodetected for JMX exposure
+2018-10-30 15:17:58 INFO  [org.springframework.jmx.export.MBeanExporter:918] - Bean with name 'secondDataSource' has been autodetected for JMX exposure
+2018-10-30 15:17:58 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'primaryDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=primaryDataSource,type=HikariDataSource]
+2018-10-30 15:17:58 INFO  [org.springframework.jmx.export.MBeanExporter:672] - Located MBean 'secondDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=secondDataSource,type=HikariDataSource]
+2018-10-30 15:17:58 INFO  [org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor:268] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-30 15:17:58 INFO  [org.springframework.boot.StartupInfoLogger:57] - Started SyncDataApplication in 1.459 seconds (JVM running for 1.958)
+2018-10-30 15:18:10 INFO  [com.zaxxer.hikari.HikariDataSource:93] - HikariPool-1 - Started.
+2018-10-30 15:18:10 INFO  [com.zaxxer.hikari.pool.PoolBase:469] - HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2018-10-30 15:18:10 INFO  [com.zjs.syncdata.schedule.ScheduleTaskMybatis:116] - =========syncAddressKeyword对应的监听器状态为关闭状态或未设置监听器信息!
